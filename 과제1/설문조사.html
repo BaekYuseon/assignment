@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>설문조사</h1>
+    </header>
+    <nav>
+        <dl>
+            <dd><a href="#">개인정보</a></dd>
+            <dd><a href="#">설문응답</a></dd>
+            <dd><a href="#">의견</a></dd>
+        </dl>
+    </nav>
+    <section>
+        <article>
+            <fieldset>
+                <legend>개인정보</legend>
+                <table>
+                    <tr>
+                        <td><lable for="name">이름</lable></td>
+                        <td><input id="name" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td><lable for="age">나이</lable></td>
+                        <td><input id="age" type="number" /></td>
+                    </tr>
+                    <tr>
+                        <td><lable for="date">생년월일</lable></td>
+                        <td><input id="date" type="date" /></td>
+                    </tr>
+                    <tr>
+                        <td><lable for="sex">성별</lable></td>
+                        <td>
+                            <input type="radio" name="sex" checked />남
+                            <input type="radio" name="sex" />여
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><lable for="number">휴대폰번호</lable></td>
+                        <td><input id="number" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td><lable for="email">이메일</lable></td>
+                        <td><input id="mail" type="mail" /></td>
+                        <td>
+                            <select>
+                                <optgroup label="메일">
+                                    <option>@naver.com</option>
+                                    <option>@nate.com</option>
+                                    <option>@hanmail.com</option>
+                                    <option>@gmail.com</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </article>
+        <article>
+            <fieldset>
+                <legend>설문응답</legend>
+                <form method="POST" action="regist.jsp">
+                    <p>좋아하는 색상 : <input type="color" name="color"></p>
+                    <p>좋아하는 동물(다중선택가능) : <br/>
+                        <input type="image" src="KakaoTalk_20210301_175242365.jpg" width="300" height="300" />
+                        <input type="checkbox" name="animal" checked />강아지
+                        <input type="image" src="KakaoTalk_20210301_175242365_14.jpg" width="300" height="300" />
+                        <input type="checkbox" name="animal" />고양이
+                        <input type="image" src="KakaoTalk_20210301_175242365_10.jpg" width="300" height="300" />
+                        <input type="checkbox" name="animal" />알파카 
+                        <input type="image" src="KakaoTalk_20210301_175242365_06.jpg" width="300" height="300" />
+                        <input type="checkbox" name="animal" />도마뱀
+                    </p>
+                    <p>좋아하는 이유 : <input type="text" name="reason" textarea cols="20" rows="20" maxlength="30" /></p>     
+                </form>
+            </fieldset>
+        </article>
+        <article>
+            <fieldset>
+                <legend>의견</legend>
+                <form>
+                    <textarea cols="150" rows="20" maxlength="100" placeholder="추첨을 통해 상품을 지급합니다."></textarea>
+                </form>
+            </fieldset>
+        </article>
+        <input type="button" value="제출하기" /><br/>
+    </section>
+    <footer>
+        <address>인천광역시 남동구</address>
+    </footer>
+</body>
+</html>
