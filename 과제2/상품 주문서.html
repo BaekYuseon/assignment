@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>상품 주문서</h1>
+    </header>
+    <nav>
+        <dl>
+            <dd><a href="#">회원</a></dd>
+            <dd><a href="#">비회원</a></dd>
+            <dd><a href="#">상품 주문서</a></dd>
+        </dl>
+    </nav>
+    <section>
+        <article>
+            <fieldset>
+                <legend>회원</legend>
+                <form method="POST" action="regist.jsp">
+                <p>아이디 : <input type="id" name="id"></p>
+                <p>비밀번호 : <input type="password" name="password"></p>
+                <p><input type="submit"value="로그인" /></p>
+                </form>
+            </fieldset>
+        </article>
+        <article>
+            <fieldset>
+                <legend>비회원</legend>
+                <form method="POST" action="regist.jsp">
+                <p>이름 : <input type="text" name="name" /></p>
+                <p>연락처 : <input type="text" name="number" /></p>
+                <p>비밀번호 : <input type="password" name="password" placeholder="6~8자 영문+숫자" /></p>
+                <p>비밀번호 확인 : <input type="password" name="password" placeholder="6~8자 영문+숫자" /></p>
+                <p>이메일 : <input id="mail" type="mail" placeholder="선택입력" />
+                            <select>
+                                <optgroup label="메일" >
+                                    <option>@naver.com</option>
+                                    <option>@nate.com</option>
+                                    <option>@hanmail.com</option>
+                                    <option>@gmail.com</option>
+                                </optgroup>
+                            </select></p>
+                <p><input type="submit" value="로그인" /></p>
+                </form>
+            </fieldset>
+        </article>
+        <article>
+            <fieldset>
+                <legend>상품 주문서</legend>
+                <form method="POST" action="regist.jsp">
+                <p>상품명 : <input type="text" name="name" /></p>
+                <p>상품 개수(5개씩) : <input type="number" name="number" min="5" max="100" step="5" /></p>
+                <p>입금자명 : <input type="text" name="name" /></p>
+                <p>입금 금액 : <input type="number" name="number" min="10000" max="10000000" step="5000" /></p>
+                <p>연락처 : <input type="text" name="number" /></p>
+                <p>주소 : <input type="text" name="address" /></p>
+                <p>희망 배송일 : <input type="date" name="date" /></p>
+                <p>포장 선택 : <input type="radio" name="select" checked />선택안함
+                              <input type="radio" name="select" />종이봉투
+                              <input type="radio" name="select" />보자기</p>
+                <p><textarea cols="50" rows="5" maxlength="30" placeholder="배송메세지를 입력하세요."></textarea></p>
+                <p><input type="submit" value="주문하기" /> <input type="reset" value="재작성" /></p>
+                </form>
+            </fieldset>
+        </article>
+    </section>
+    <footer>
+        <address>
+            인천광역시 남동구 **회사 032-***-****
+        </address>
+        <number>고객센터 1588-****</number>
+        
+    </footer>
+</body>
+</html>
