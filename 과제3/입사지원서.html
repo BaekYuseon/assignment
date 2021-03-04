@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>입사지원서</h1>
+    </header>
+    <div>
+        <fieldset>
+            <legend>인적사항</legend>
+                <table>
+                    <tr>
+                        <td><img src="http://placehold.it/150x200" /></td>
+                    </tr>
+                    <tr>    
+                        <td>
+                            이름 <input type="text" name="name">
+                        
+                        </td>
+                        <td>
+                        생년월일 <input type="date" name="date"> 
+                        </td>
+                    </tr>    
+                    <tr>
+                        <td>
+                            나이 <input type="number" name="age" min="17" max="65">
+                        </td>
+                        <td>
+                            연락처 <input type="text" name="number">
+                        </td>
+                    </tr>    
+                    <tr>
+                        <td>
+                            E-mail <input type="mail" name="email">
+                        </td>
+                        <td>
+                            주소 <input type="text" name="address">
+                        </td>
+                    </tr>       
+                </table>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>학력사항</legend>
+                <table border="1">
+                    <tr>
+                        <th>재학 기간</th>
+                        <th>학교명</th>
+                        <th>전공</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="date"></td>
+                        <td><input type="text" name="school"></td>
+                        <td><input type="text" name="major"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="date"></td>
+                        <td><input type="text" name="school"></td>
+                        <td><input type="text" name="major"></td> 
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="date"></td>
+                        <td><input type="text" name="school"></td>
+                        <td><input type="text" name="major"></td>
+                    </tr>
+                </table>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>경력사항</legend>
+                <table border="1">
+                    <tr>
+                        <th>근무기간</th>
+                        <th>직장명</th>
+                        <th>직급</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="date"></td>
+                        <td><input type="text" name="company"></td>
+                        <td>
+                            <select>
+                                <optgroup label="직급" >
+                                    <option>인턴</option>
+                                    <option>사원</option>
+                                    <option>주임</option>
+                                    <option>대리</option>
+                                    <option>과장</option>
+                                    <option>부장</option>
+                                    <option>팀장</option>
+                                    <option>실장</option>
+                                    <option>본부장</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="date"></td>
+                        <td><input type="text" name="company"></td>
+                        <td>
+                            <select>
+                                <optgroup label="직급" >
+                                    <option>인턴</option>
+                                    <option>사원</option>
+                                    <option>주임</option>
+                                    <option>대리</option>
+                                    <option>과장</option>
+                                    <option>부장</option>
+                                    <option>팀장</option>
+                                    <option>실장</option>
+                                    <option>본부장</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="date"></td>
+                        <td><input type="text" name="company"></td>
+                        <td>
+                            <select>
+                                <optgroup label="직급" >
+                                    <option>인턴</option>
+                                    <option>사원</option>
+                                    <option>주임</option>
+                                    <option>대리</option>
+                                    <option>과장</option>
+                                    <option>부장</option>
+                                    <option>팀장</option>
+                                    <option>실장</option>
+                                    <option>본부장</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>자격사항</legend>
+                <table border="1">
+                    <tr>
+                        <th>자격명</th>
+                        <th>취득일</th>
+                        <th>발급기관</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="certificate"></td>
+                        <td><input type="date" name="date"></td>
+                        <td><input type="text" name="agency"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="certificate"></td>
+                        <td><input type="date" name="date"></td>
+                        <td><input type="text" name="agency"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="certificate"></td>
+                        <td><input type="date" name="date"></td>
+                        <td><input type="text" name="agency"></td>
+                    </tr>
+                </table>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <legend>자기소개</legend>
+                <form>
+                    성장과정 <br />
+                    <textarea cols="100" rows="20" maxlength="400" placeholder="300자 내외로 작성하세요."></textarea>
+                </form>
+                <form>
+                    자신의 장단점 및 특기 <br />
+                    <textarea cols="100" rows="20" maxlength="400" placeholder="300자 내외로 작성하세요."></textarea>
+                </form>
+                <form>
+                    지원동기 <br />
+                    <textarea cols="100" rows="20" maxlength="400" placeholder="300자 내외로 작성하세요."></textarea>
+                </form>
+                <form>
+                    입사 후 다짐 <br />
+                    <textarea cols="100" rows="20" maxlength="400" placeholder="300자 내외로 작성하세요."></textarea>
+                </form>
+        </fieldset>
+    </div>
+    <div>
+        <p><input type="submit" value="제출하기" /> <input type="reset" value="재작성" /></p>
+    </div>
+    <footer>
+        <address>
+            인천광역시 남동구 **회사
+        </address>
+        <number>문의사항 032-***-****</number>
+</body>
+</html>
