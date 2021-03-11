@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/* 초기화 */
+* { margin: 0; padding: 0; }
+        body { font-family: sans-serif; }
+        li { list-style: none; }
+        a { text-decoration: none; }
+        img { border: 0; }
+
+body {
+    width: 980px;
+    margin: 0 auto;
+}
+
+#header {
+    width: 980px;
+    margin: 0 auto;
+    height: 160px;
+    position: relative;
+    background: #f7c1b8;
+    margin-bottom: 2px;
+}
+
+.logo {
+    top: 10px;
+    right: 20px;
+    position: absolute;
+    font-size: 25px;
+}
+
+#lnb {
+    position: absolute;
+    left: 5px; top: 0;
+    font-family: 'Caveat', cursive;
+}
+
+#lnb > ul {
+    overflow: hidden;
+}
+
+#lnb li {
+    float: left;
+}
+
+#lnb  > ul > li > a {
+    display: block;
+    padding: 2px 10px;
+    background: #f7e1de;
+    color: white;
+    border: 1px solid #f7e1de;
+    line-height: 15px;
+    font-size: small;
+    border-radius: 10px;
+}
+
+#gnb {
+    position: absolute;
+    left: 5px; top: 100px;
+    font-family: 'Caveat', cursive;
+}
+
+#gnb > ul {
+    overflow: hidden;
+}
+
+#gnb li {
+    float: left;
+}
+
+#gnb  > ul > li > a {
+    display: block;
+    padding: 2px 10px;
+    background: #f0d5d0;
+    color: white;
+    border: 1px solid #f0d5d0;
+    line-height: 30px;
+}
+
+#gnb > ul > li:first-child > a {
+    border-radius: 10px 0 0 10px;
+}
+#gnb > ul > li:last-child > a {
+    border-radius: 0 10px 10px 0;
+}
+
+#section_1 {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.article_1 {
+    margin: 0 auto;
+}
+
+#content {
+    overflow: hidden;
+}
+
+#section_2 {
+    position: relative;
+    width: 485px;
+    height: 600px;
+    background: #f7e1de;
+    margin: 0 auto;
+    float: left;
+}
+
+.article_2 > .title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.article_2 > .memory {
+    padding-left: 15px;
+}
+
+#aside {
+    position: relative;
+    width: 485px;
+    height: 600px;
+    background: #f7e1de;
+    margin: 0 auto;
+    float: right;
+}
+
+#aside > .title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#aside > .coupon {
+    padding-left: 44.5px;
+}
+
+#footer {
+    overflow: hidden;
+    margin-top: 5px;
+    border-top: thick dashed #f7c1b8;
+    background: #f7e1de
+}
+
+.address {
+    float: left;
+    width: 480px;
+    padding-left: 5px;
+    border-right: thick dashed #f7c1b8;
+    text-align: center;
+    line-height: 35px;
+    padding-top: 5px;
+}
+
+.number {
+    float: left;
+    width: 480px;
+    padding-left: 10px;
+    text-align: center;
+    line-height: 45px;
+    padding-top: 10px;
+}
