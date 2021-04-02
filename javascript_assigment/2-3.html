@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1 = Number(prompt("첫번째 숫자를 입력하세요.", "0"))
+        var num2 = Number(prompt("두번째 숫자를 입력하세요.", "0"))
+        var num3 = Number(prompt("세번째 숫자를 입력하세요.", "0"))
+
+        var max = Math.max (num1, num2, num3);
+        var min = Math.min (num1, num2, num3);
+        var sum = (num1 + num2 + num3);
+        var average = ((num1 + num2 + num3)/3);
+
+        document.write(max,"<br>", min, "<br>", sum, "<br>", average);
+    </script>
+</body>
+</html>

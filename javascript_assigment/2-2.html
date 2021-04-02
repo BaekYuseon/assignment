@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var height = prompt("키를 입력하세요.", "0");
+        var pass = "즐거운 시간 되세요~";
+        var under = "어른 모시고 다시오렴~";
+
+        if(height < 150) {
+            var result = confirm("부모님과 함께 왔나요?");
+            if(result){
+                document.write(pass);
+            } else {
+                document.write(under);
+            }
+        } else {
+            document.write(pass);
+        }
+    </script>
+</body>
+</html>
